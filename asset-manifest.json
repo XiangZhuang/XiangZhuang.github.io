@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bcbf044e.css",
-    "main.js": "/static/js/main.f5cd845c.js",
+    "main.js": "/static/js/main.e0e599dd.js",
     "static/media/profile.png": "/static/media/profile.05e989dbeaf91a15aade.png",
     "static/media/dengraver.jpg": "/static/media/dengraver.7f541012c46b98cbdd9f.jpg",
     "static/media/credit_suisse.jpg": "/static/media/credit_suisse.75b7d2b55958cfdd6ce6.jpg",
@@ -10,10 +10,10 @@
     "static/media/logo.png": "/static/media/logo.67cf7bf9cb8c01e360c6.png",
     "index.html": "/index.html",
     "main.bcbf044e.css.map": "/static/css/main.bcbf044e.css.map",
-    "main.f5cd845c.js.map": "/static/js/main.f5cd845c.js.map"
+    "main.e0e599dd.js.map": "/static/js/main.e0e599dd.js.map"
   },
   "entrypoints": [
     "static/css/main.bcbf044e.css",
-    "static/js/main.f5cd845c.js"
+    "static/js/main.e0e599dd.js"
   ]
 }
