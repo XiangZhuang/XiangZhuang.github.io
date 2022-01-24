@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.91fe8564.css",
-    "main.js": "/static/js/main.43f1487f.js",
+    "main.css": "/static/css/main.bcbf044e.css",
+    "main.js": "/static/js/main.f5cd845c.js",
+    "static/media/profile.png": "/static/media/profile.05e989dbeaf91a15aade.png",
+    "static/media/dengraver.jpg": "/static/media/dengraver.7f541012c46b98cbdd9f.jpg",
+    "static/media/credit_suisse.jpg": "/static/media/credit_suisse.75b7d2b55958cfdd6ce6.jpg",
+    "static/media/tech_lines.png": "/static/media/tech_lines.0b73f811c7b57b1f9436.png",
+    "static/media/cfas_web.jpg": "/static/media/cfas_web.673baf7c4ac45e395392.jpg",
     "static/media/logo.png": "/static/media/logo.67cf7bf9cb8c01e360c6.png",
     "index.html": "/index.html",
-    "main.91fe8564.css.map": "/static/css/main.91fe8564.css.map",
-    "main.43f1487f.js.map": "/static/js/main.43f1487f.js.map"
+    "main.bcbf044e.css.map": "/static/css/main.bcbf044e.css.map",
+    "main.f5cd845c.js.map": "/static/js/main.f5cd845c.js.map"
   },
   "entrypoints": [
-    "static/css/main.91fe8564.css",
-    "static/js/main.43f1487f.js"
+    "static/css/main.bcbf044e.css",
+    "static/js/main.f5cd845c.js"
   ]
 }
