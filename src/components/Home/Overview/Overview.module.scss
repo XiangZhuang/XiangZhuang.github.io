@@ -1,0 +1,81 @@
+.overview {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  background: center right no-repeat url(../../../resources/images/profile.png);
+  background-size: 55%;
+  @media only screen and (max-width: 769px) {
+    height: calc(500px + 70px);
+    background-position: bottom right;
+    background-size: 80%;
+    align-items: flex-start;
+  }
+  @media only screen and (max-width: 500px) {
+    height: calc(500px + 60px);
+    background-size: 120%;
+    background-position-x: -50px;
+  }
+  > .content {
+    width: 40%;
+    justify-content: center;
+    padding: 0 45px;
+    @media only screen and (max-width: 769px) {
+      width: 80%;
+      padding: 60px 30px 0;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      padding-top: 15px;
+    }
+    > .title {
+      display: flex;
+      align-items: center;
+      > p {
+        font-size: 45px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        @media only screen and (max-width: 1000px) {
+          font-size: 30px;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 24px;
+        }
+      }
+      > .enriched {
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        background-color: #404040;
+        color: white;
+      }
+    }
+    > .subTitle {
+      margin-top: 15px;
+      font-weight: bold;
+      > p {
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        @media only screen and (max-width: 1000px) {
+          font-size: 16px;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 14px;
+        }
+      }
+    }
+    > .desc {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      > p {
+        font-weight: lighter;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        color: #404040;
+        @media only screen and (max-width: 500px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

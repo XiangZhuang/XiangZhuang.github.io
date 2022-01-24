@@ -13,5 +13,7 @@ code {
 }
 
 p {
+  margin: 0;
   font-family: Arial, serif;
+  color: #404040;
 }
