@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./components/UI/Header/Header";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Header />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
