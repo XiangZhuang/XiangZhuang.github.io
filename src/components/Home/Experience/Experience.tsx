@@ -57,7 +57,6 @@ const Experience = () => {
         </div>
         <div className={styles.navs}>
           {experiences.map((experience, index) => {
-            console.log(experiences.slice(0, index));
             return (
               <div
                 key={index}
