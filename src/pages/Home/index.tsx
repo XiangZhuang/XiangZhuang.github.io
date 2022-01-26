@@ -2,6 +2,7 @@ import styles from "./index.module.scss";
 import Overview from "../../components/Home/Overview/Overview";
 import Experience from "../../components/Home/Experience/Experience";
 import Designs from "../../components/Home/Designs/Designs";
+import Apps from "../../components/Home/Apps/Apps";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Overview />
       <Experience />
       <Designs />
+      <Apps />
     </div>
   );
 };
