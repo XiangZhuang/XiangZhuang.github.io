@@ -1,0 +1,196 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 100px;
+  > .container {
+    display: flex;
+    @media only screen and (max-width: 761px) {
+      flex-direction: column;
+      height: fit-content;
+    }
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    padding: 45px;
+    @media only screen and (max-width: 761px) {
+      width: 100%;
+      padding: 30px;
+    }
+    > .logo {
+      width: 250px;
+      @media only screen and (max-width: 761px) {
+        width: 200px;
+      }
+      > img {
+        width: 100%;
+      }
+    }
+    > .socialMedias {
+      display: flex;
+      margin-top: 20px;
+      gap: 15px;
+      width: 150px;
+      @media only screen and (max-width: 761px) {
+        width: 120px;
+      }
+      > .socialMedia {
+        width: calc(25% - 15px);
+        > img {
+          width: 100%;
+        }
+      }
+    }
+    > .copyright {
+      position: absolute;
+      bottom: 0;
+      @media only screen and (max-width: 761px) {
+        margin-top: 15px;
+        position: relative;
+        bottom: unset;
+        left: unset;
+      }
+      > p {
+        font-size: 12px;
+        color: #888;
+        @media only screen and (max-width: 761px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .middle {
+    height: 100%;
+    flex-grow: 1;
+    padding: 45px 10px;
+    @media only screen and (max-width: 761px) {
+      width: 100%;
+      padding: 5px 30px;
+      align-items: center;
+    }
+    > .navs {
+      justify-content: flex-start;
+      @media only screen and (max-width: 761px) {
+        align-items: center;
+      }
+      > .title {
+        margin-bottom: 10px;
+        @media only screen and (max-width: 761px) {
+          margin-bottom: 5px;
+        }
+        > p {
+          font-weight: bold;
+          @media only screen and (max-width: 761px) {
+            font-size: 14px;
+          }
+        }
+      }
+      > .nav {
+        align-self: start;
+        margin-top: 8px;
+        width: fit-content;
+        cursor: pointer;
+        @media only screen and (max-width: 761px) {
+          display: flex;
+          margin-bottom: 2px;
+          align-self: center;
+        }
+        > p {
+          font-size: 14px;
+          @media only screen and (max-width: 761px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    padding: 45px;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    @media only screen and (max-width: 761px) {
+      width: 100%;
+      align-items: center;
+      padding: 15px 30px;
+    }
+    > .contact {
+      @media only screen and (max-width: 761px) {
+        align-items: center;
+      }
+      > .title {
+        > p {
+          font-weight: bold;
+          @media only screen and (max-width: 761px) {
+            font-size: 14px;
+          }
+        }
+      }
+      > .form {
+        margin-top: 10px;
+        > .success {
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+          > p {
+            margin: 0 auto;
+            font-size: 14px;
+          }
+        }
+        > textarea {
+          width: 100%;
+          border: 1px solid #404040;
+          border-radius: 4px;
+          padding: 8px;
+          @media only screen and (max-width: 761px) {
+            width: 200px;
+          }
+        }
+        > .email {
+          display: flex;
+          margin-top: 10px;
+          width: 100%;
+          > input {
+            padding: 4px 8px;
+            border: 1px solid #404040;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            height: 26px;
+            @media only screen and (max-width: 761px) {
+              width: 150px;
+            }
+          }
+          > .submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 8px;
+            border: 1px solid #404040;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: 0.15s;
+            @media only screen and (max-width: 761px) {
+              width: 50px;
+            }
+            > p {
+              font-size: 14px;
+              transition: 0.15s;
+            }
+          }
+          > .submit:hover {
+            background-color: #404040;
+            > p {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
