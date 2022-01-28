@@ -117,9 +117,13 @@ const Footer = () => {
             <div className={styles.title}>
               <p>Explore</p>
             </div>
-            {navs.map((nav) => {
+            {navs.map((nav, index) => {
               return (
-                <div className={styles.nav} onClick={() => navigate(nav.link)}>
+                <div
+                  key={index}
+                  className={styles.nav}
+                  onClick={() => navigate(nav.link)}
+                >
                   <p>{nav.name}</p>
                 </div>
               );

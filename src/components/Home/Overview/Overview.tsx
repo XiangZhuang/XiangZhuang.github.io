@@ -2,16 +2,14 @@ import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
 import Button from "../../UI/Button/Button";
 import styles from "./Overview.module.scss";
+import Name from "../../UI/Name/Name";
 
 const Overview = () => {
   const navigate = useNavigate();
   return (
     <Box className={styles.overview}>
       <div className={styles.content}>
-        <div className={styles.title}>
-          <p>Johnson</p>
-          <p className={styles.enriched}>Zhuang</p>
-        </div>
+        <Name />
         <div className={styles.subTitle}>
           <p>Web Application Designer & Developer</p>
         </div>

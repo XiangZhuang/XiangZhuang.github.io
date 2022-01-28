@@ -6,6 +6,8 @@ import Header from "./components/UI/Header/Header";
 import Pages from "./pages";
 import Home from "./pages/Home";
 import Footer from "./components/UI/Footer/Footer";
+import About from "./pages/About";
+import Music from "./components/About/Music/Music";
 
 function App() {
   return (
@@ -16,12 +18,14 @@ function App() {
           <Routes>
             <Route path="/" element={<Pages />}>
               <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="*" element={<Navigate to="/home" />} />
             </Route>
           </Routes>
           <Footer />
         </div>
+        <Music />
         <Notifications />
       </HashRouter>
     </NotificationProvider>
