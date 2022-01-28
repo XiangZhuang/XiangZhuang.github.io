@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.321ba36e.css",
-    "main.js": "/static/js/main.8d59eb2d.js",
+    "main.css": "/static/css/main.33f2d281.css",
+    "main.js": "/static/js/main.728e64c8.js",
+    "static/media/egyptian.mp3": "/static/media/egyptian.92c296504277391cb426.mp3",
     "static/media/profile.png": "/static/media/profile.05e989dbeaf91a15aade.png",
     "static/media/jojo_01.jpg": "/static/media/jojo_01.ae0b9a5c82fc40500479.jpg",
     "static/media/dengraver.jpg": "/static/media/dengraver.7f541012c46b98cbdd9f.jpg",
+    "static/media/self.png": "/static/media/self.9ab30c7271fdec589b13.png",
     "static/media/cfas_game.png": "/static/media/cfas_game.dcdf1acbed6fd5b28da9.png",
     "static/media/last_one_standing.png": "/static/media/last_one_standing.505900a1ea173ae8997e.png",
     "static/media/credit_suisse.jpg": "/static/media/credit_suisse.75b7d2b55958cfdd6ce6.jpg",
@@ -19,11 +21,11 @@
     "static/media/facebook.png": "/static/media/facebook.74fdbaddf6710a252b97.png",
     "static/media/linkedin.png": "/static/media/linkedin.cff1c4214ba072676e69.png",
     "index.html": "/index.html",
-    "main.321ba36e.css.map": "/static/css/main.321ba36e.css.map",
-    "main.8d59eb2d.js.map": "/static/js/main.8d59eb2d.js.map"
+    "main.33f2d281.css.map": "/static/css/main.33f2d281.css.map",
+    "main.728e64c8.js.map": "/static/js/main.728e64c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.321ba36e.css",
-    "static/js/main.8d59eb2d.js"
+    "static/css/main.33f2d281.css",
+    "static/js/main.728e64c8.js"
   ]
 }
