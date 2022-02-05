@@ -1,31 +1,41 @@
 {
   "files": {
-    "main.css": "/static/css/main.33f2d281.css",
-    "main.js": "/static/js/main.728e64c8.js",
+    "main.css": "/static/css/main.66eef056.css",
+    "main.js": "/static/js/main.344d7a0d.js",
     "static/media/egyptian.mp3": "/static/media/egyptian.92c296504277391cb426.mp3",
     "static/media/profile.png": "/static/media/profile.05e989dbeaf91a15aade.png",
+    "static/media/banner.jpg": "/static/media/banner.b68f869a27fd8de51220.jpg",
     "static/media/jojo_01.jpg": "/static/media/jojo_01.ae0b9a5c82fc40500479.jpg",
     "static/media/dengraver.jpg": "/static/media/dengraver.7f541012c46b98cbdd9f.jpg",
     "static/media/self.png": "/static/media/self.9ab30c7271fdec589b13.png",
     "static/media/cfas_game.png": "/static/media/cfas_game.dcdf1acbed6fd5b28da9.png",
     "static/media/last_one_standing.png": "/static/media/last_one_standing.505900a1ea173ae8997e.png",
+    "static/media/one_punch_01.jpg": "/static/media/one_punch_01.1cecb0d7ab47866674b5.jpg",
+    "static/media/captain.jpg": "/static/media/captain.474ec402d906c47fe34f.jpg",
+    "static/media/doctor.jpg": "/static/media/doctor.80340e7f2392744f1b42.jpg",
+    "static/media/mk46.jpg": "/static/media/mk46.16dd3c2220adbcd0fce8.jpg",
     "static/media/credit_suisse.jpg": "/static/media/credit_suisse.75b7d2b55958cfdd6ce6.jpg",
+    "static/media/welcome.jpg": "/static/media/welcome.567c2e62f0bdcf7c731f.jpg",
     "static/media/tech_lines.png": "/static/media/tech_lines.0b73f811c7b57b1f9436.png",
+    "static/media/firework.jpg": "/static/media/firework.ffc94e0469aa52f238d5.jpg",
     "static/media/deadpool.jpg": "/static/media/deadpool.b35aee614b998298c43c.jpg",
     "static/media/cfas_web.jpg": "/static/media/cfas_web.673baf7c4ac45e395392.jpg",
     "static/media/joker_01.jpg": "/static/media/joker_01.15e458501318742f9075.jpg",
+    "static/media/sunset.jpg": "/static/media/sunset.415e1daefbb34e65395c.jpg",
     "static/media/github.png": "/static/media/github.c73b23ff181a81ada58d.png",
+    "static/media/me.jpg": "/static/media/me.7dc551e218160f94f5af.jpg",
     "static/media/instagram.png": "/static/media/instagram.5343370c3ad1b530085c.png",
+    "static/media/moth.jpg": "/static/media/moth.5dbef165c30be1225343.jpg",
     "static/media/logo.png": "/static/media/logo.67cf7bf9cb8c01e360c6.png",
     "static/media/flip_cards.png": "/static/media/flip_cards.90b142e8d949b061a0b0.png",
     "static/media/facebook.png": "/static/media/facebook.74fdbaddf6710a252b97.png",
     "static/media/linkedin.png": "/static/media/linkedin.cff1c4214ba072676e69.png",
     "index.html": "/index.html",
-    "main.33f2d281.css.map": "/static/css/main.33f2d281.css.map",
-    "main.728e64c8.js.map": "/static/js/main.728e64c8.js.map"
+    "main.66eef056.css.map": "/static/css/main.66eef056.css.map",
+    "main.344d7a0d.js.map": "/static/js/main.344d7a0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.33f2d281.css",
-    "static/js/main.728e64c8.js"
+    "static/css/main.66eef056.css",
+    "static/js/main.344d7a0d.js"
   ]
 }
