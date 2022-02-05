@@ -7,10 +7,10 @@ import music from "../../../resources/media/egyptian.mp3";
 const Music = () => {
   const [audio] = useState(new Audio(music));
   audio.volume = 0.1;
+  audio.loop = true;
   const [show, setShow] = useState(false);
   const [play, setPlay] = useState(false);
   useEffect(() => {
-    console.log(audio);
     play ? audio.play() : audio.pause();
   }, [play]);
   return (
