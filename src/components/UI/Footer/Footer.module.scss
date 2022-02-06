@@ -64,6 +64,13 @@
           text-align: center;
         }
       }
+      > .github {
+        margin-bottom: 5px;
+        > a {
+          color: cornflowerblue;
+          text-decoration: none;
+        }
+      }
     }
   }
   .middle {

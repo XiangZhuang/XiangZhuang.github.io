@@ -109,6 +109,15 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.copyright}>
+            <p className={styles.github}>
+              View this site on{" "}
+              <a
+                href="https://github.com/XiangZhuang/XiangZhuang.github.io"
+                target="_blank"
+              >
+                Github
+              </a>
+            </p>
             <p>Copyright © 2021 Johnson Z. All Rights Reserved</p>
           </div>
         </div>
