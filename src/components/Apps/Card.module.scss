@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 400px;
+  > .img {
+    -webkit-filter: grayscale(0.5);
+    position: absolute;
+    width: 60%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 6px;
+    background: no-repeat center;
+    background-size: cover;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.15s;
+  }
+  > .clickable {
+    cursor: pointer;
+  }
+  > .img:hover {
+    -webkit-filter: grayscale(0);
+  }
+  > .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+    width: 50%;
+    pointer-events: none;
+    > .title {
+      font-size: 26px;
+      pointer-events: auto;
+      > a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+      > a:hover {
+        color: #666;
+      }
+    }
+    > .desc {
+      margin-top: 25px;
+      padding: 25px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      background-color: #444;
+      border-radius: 6px;
+      pointer-events: auto;
+      > p {
+        color: white;
+        line-height: 1.5em;
+        text-align: right;
+      }
+    }
+    > .tools {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+      pointer-events: auto;
+      > p {}
+      font-size: 14px;
+    }
+    > .externals {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+      pointer-events: auto;
+      > .external {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.15s;
+      }
+      > .external:hover {
+        color: #666;
+      }
+    }
+  }
+}
+.flap {
+  justify-content: flex-start;
+  > .img {
+    right: 0;
+  }
+  > .content {
+    align-items: flex-start;
+    > .desc {
+      > p {
+        text-align: left;
+      }
+    }
+  }
+}

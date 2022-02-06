@@ -80,6 +80,10 @@ const Apps = () => {
             Here displays some of the apps I developed. Click to play. Enjoy
             yourself~ To explore more, please click the button below :)
           </p>
+          <p>
+            (The server hosting the apps displayed here is under maintenance...
+            To see more apps i developed, please click More to explore.)
+          </p>
         </div>
         <Button text="More" onClick={() => navigate("/apps")} />
       </div>

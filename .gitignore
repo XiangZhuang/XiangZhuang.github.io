@@ -1,5 +1,8 @@
 .idea/
 
+# credentials
+/src/common/credential
+
 # Logs
 logs
 *.log

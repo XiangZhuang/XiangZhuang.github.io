@@ -1,24 +1,27 @@
 import styles from "./Banner.module.scss";
-import banner from "../../../resources/images/designs/banner.jpg";
 
-const Banner = () => {
+interface BannerProps {
+  title: string;
+  desc: string;
+  img: string;
+}
+
+const Banner = (props: BannerProps) => {
+  const { title, desc, img } = props;
   return (
     <div
       className={styles.banner}
       style={{
-        backgroundImage: `url(${banner})`,
+        backgroundImage: `url(${img})`,
       }}
     >
       <div className={styles.cover}>
         <div className={styles.info}>
           <div className={styles.title}>
-            <p>Johnson's Designs</p>
+            <p>{title}</p>
           </div>
           <div className={styles.desc}>
-            <p>
-              Here displays my art works, which include paintings, photos, and
-              PS work.
-            </p>
+            <p>{desc}</p>
           </div>
         </div>
       </div>

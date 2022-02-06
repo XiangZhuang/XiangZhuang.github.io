@@ -1,0 +1,9 @@
+.apps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  > .projects {
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+}
