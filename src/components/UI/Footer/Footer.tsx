@@ -8,6 +8,8 @@ import instagram from "../../../resources/images/icons/instagram.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useNotification } from "react-easy-notification";
+import { sendContactForm } from "../../../common/utility/email";
+import Loading from "../Loading/Loading";
 
 const navs = [
   {
@@ -37,6 +39,7 @@ const Footer = () => {
   const { pushNotification } = useNotification();
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const isContactValid = () => {
     if (!message) {
       pushNotification({
@@ -64,10 +67,26 @@ const Footer = () => {
   };
   const submitFooterContact = () => {
     if (isContactValid()) {
-      pushNotification({
-        type: "success",
-        text: "Thank you for contacting me! I will reply to you as soon as possible.",
-      });
+      setLoading(true);
+      sendContactForm({
+        email,
+        message,
+      })
+        .then(() => {
+          pushNotification({
+            type: "success",
+            text: "Thank you for contacting me! I will reply to you as soon as possible.",
+          });
+        })
+        .catch(() => {
+          pushNotification({
+            type: "danger",
+            text: "Message failed to be sent. Please directly contact me through Email or WhatsApp.",
+          });
+        })
+        .finally(() => {
+          setLoading(false);
+        });
       // TODO: Email implementation using third-party api
     }
   };
@@ -158,8 +177,17 @@ const Footer = () => {
                   placeholder="Your Email"
                   onChange={(evt) => setEmail(evt.target.value)}
                 />
-                <div className={styles.submit} onClick={submitFooterContact}>
-                  <p>Send</p>
+                <div
+                  className={`${styles.submit} ${
+                    loading ? styles.disabled : ""
+                  }`}
+                  onClick={() => {
+                    if (!loading) {
+                      submitFooterContact();
+                    }
+                  }}
+                >
+                  {loading ? <Loading /> : <p>Send</p>}
                 </div>
               </div>
             </div>

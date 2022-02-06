@@ -8,6 +8,7 @@ import { BsTelephone } from "react-icons/bs";
 import Button from "../../UI/Button/Button";
 import { useState } from "react";
 import { useNotification } from "react-easy-notification";
+import { sendContactForm } from "../../../common/utility/email";
 
 const Card = () => {
   const { pushNotification } = useNotification();
@@ -15,6 +16,7 @@ const Card = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const isValid = () => {
     if (!name) {
       pushNotification({
@@ -56,6 +58,28 @@ const Card = () => {
   };
   const submitContact = () => {
     if (isValid()) {
+      setLoading(true);
+      sendContactForm({
+        name,
+        phone,
+        message,
+        email,
+      })
+        .then(() => {
+          pushNotification({
+            type: "success",
+            text: "Thank you for contacting me! I will reply to you as soon as possible.",
+          });
+        })
+        .catch(() => {
+          pushNotification({
+            type: "danger",
+            text: "Message failed to be sent. Please directly contact me through Email or WhatsApp.",
+          });
+        })
+        .finally(() => {
+          setLoading(false);
+        });
     }
   };
 
@@ -173,7 +197,11 @@ const Card = () => {
             </div>
           </div>
           <div className={styles.item}>
-            <Button text="Send" onClick={() => submitContact()} />
+            <Button
+              text="Send"
+              onClick={() => submitContact()}
+              loading={loading}
+            />
           </div>
         </div>
       </div>

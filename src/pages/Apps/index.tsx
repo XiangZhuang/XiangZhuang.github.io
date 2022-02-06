@@ -9,7 +9,7 @@ const projects = [
     title: "Pichi's Website",
     desc: "This is a website I created for my pet, Pichi, a cute bengal cat. If you are interested in learning about a cute creature, go for a journey into Pichi's life!",
     img: pichi,
-    tools: ["Typescript", "ReactJS", "Gradle"],
+    tools: ["Typescript", "ReactJS", "Sass", "Gradle"],
     links: {
       github: "https://github.com/XiangZhuang/pichi-app",
       production: "https://www.pichi.link",
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "react-easy-notification",
     desc: "A notification component designed for React, supporting typescript and react hooks, and most importantly, easy to use:)",
-    tools: ["Typescript", "ReactJS"],
+    tools: ["Typescript", "ReactJS", "Sass"],
     links: {
       github: "https://github.com/XiangZhuang/react-easy-notification",
       production: "https://www.npmjs.com/package/react-easy-notification",
