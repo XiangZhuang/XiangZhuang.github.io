@@ -87,7 +87,6 @@ const Footer = () => {
         .finally(() => {
           setLoading(false);
         });
-      // TODO: Email implementation using third-party api
     }
   };
   return (
