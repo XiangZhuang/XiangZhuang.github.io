@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Music from "./components/UI/Music/Music";
 import Designs from "./pages/Designs";
 import Apps from "./pages/Apps";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/designs" element={<Designs />} />
               <Route path="/apps" element={<Apps />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="*" element={<Navigate to="/home" />} />
             </Route>
