@@ -1,0 +1,26 @@
+.educations {
+  margin-top: 100px;
+  width: 70%;
+  padding: 60px 45px;
+  border-radius: 15px;
+  background-color: #404040;
+  transition: 0.15s;
+  > .title {
+    font-size: 35px;
+    font-weight: bold;
+    > p {
+      color: white;
+    }
+  }
+  > .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 45px;
+  }
+}
+
+.educations:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
