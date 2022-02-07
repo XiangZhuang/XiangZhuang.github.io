@@ -13,6 +13,7 @@ import me from "../../../resources/images/designs/me.jpg";
 import welcome from "../../../resources/images/designs/welcome.jpg";
 import firework from "../../../resources/images/designs/firework.jpg";
 import Photo from "./Photo/Photo";
+import Loading from "../../UI/Loading/Loading";
 
 enum DesignType {
   ALL,
@@ -119,8 +120,10 @@ const Gallery = () => {
   const columnsRef = useRef<HTMLDivElement>(null);
   const [category, setCategory] = useState(DesignType.ALL);
   const [columns, setColumns] = useState<Array<Array<ReactNode>>>([[], [], []]);
+  const [loading, setLoading] = useState(false);
 
   const generateColumns = async () => {
+    setLoading(true);
     const columns: Array<Array<ReactNode>> = Array.from(
       Array(columnsRef.current?.children.length),
       () => []
@@ -158,6 +161,7 @@ const Gallery = () => {
       await promises[promises.length - 1];
     }
     setColumns(columns);
+    setLoading(false);
   };
 
   const getShortestColumn = (columns: Array<Array<number>>) => {
@@ -184,7 +188,6 @@ const Gallery = () => {
               }`}
               onClick={() => {
                 setCategory(CATEGORY.value);
-                // "generateGallery('<?php echo $categorys[$i]['key']; ?>')"
               }}
             >
               <p>{CATEGORY.label}</p>
@@ -193,6 +196,11 @@ const Gallery = () => {
         })}
       </div>
       <div className={styles.columns} ref={columnsRef}>
+        {loading ? (
+          <div className={styles.loading}>
+            <Loading size="large" />
+          </div>
+        ) : null}
         <div className={styles.column}>{columns[0].map((photo) => photo)}</div>
         <div className={styles.column}>{columns[1].map((photo) => photo)}</div>
         <div className={styles.column}>{columns[2].map((photo) => photo)}</div>

@@ -186,7 +186,7 @@ const Footer = () => {
                     }
                   }}
                 >
-                  {loading ? <Loading /> : <p>Send</p>}
+                  {loading ? <Loading size="small" /> : <p>Send</p>}
                 </div>
               </div>
             </div>

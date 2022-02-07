@@ -18,7 +18,7 @@ const Button = (props: ButtonProps) => {
         }
       }}
     >
-      {loading ? <Loading /> : <p>{text}</p>}
+      {loading ? <Loading size="small" /> : <p>{text}</p>}
     </div>
   );
 };

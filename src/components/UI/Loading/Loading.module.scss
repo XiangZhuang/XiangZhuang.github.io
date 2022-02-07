@@ -2,14 +2,26 @@
   animation-name: loading;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  font-size: 14px;
   transition: 0.15s;
+  color: #333;
   @media only screen and (max-width: 769px) {
     font-size: 13px;
   }
   @media only screen and (max-width: 500px) {
     font-size: 12px;
   }
+}
+
+.large {
+  font-size: 36px;
+}
+
+.medium {
+  font-size: 20px;
+}
+
+.small {
+  font-size: 14px;
 }
 
 @keyframes loading {
