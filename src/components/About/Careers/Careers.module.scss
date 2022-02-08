@@ -1,0 +1,22 @@
+.careers {
+  align-self: flex-end;
+  margin-top: 100px;
+  width: 70%;
+  padding: 60px 45px;
+  border-radius: 15px;
+  transition: 0.15s;
+  > .title {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  > .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 45px;
+  }
+}
+
+.careers:hover {
+  transform: scale(1.02);
+}

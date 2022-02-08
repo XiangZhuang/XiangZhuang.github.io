@@ -32,7 +32,6 @@
       margin-top: 15px;
       > .icon {
         margin-right: 5px;
-        color: white;
       }
       > p {
         font-size: 14px;
@@ -43,6 +42,9 @@
 
 .white {
   p {
+    color: white;
+  }
+  .icon {
     color: white;
   }
 }
