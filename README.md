@@ -2,9 +2,9 @@
 
 This is Johnson Zhuang's personal website.
 
-###Technologies involved:
+### Technologies involved:
 - Typescript
 - Modular Sass
 
-###In Progress:
+### In Progress:
 - Reactive designs
