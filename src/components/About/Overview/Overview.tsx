@@ -15,12 +15,12 @@ const optionGeneral = {
       show: true,
     },
     indicator: [
-      { text: "Painting", max: 100 },
-      { text: "Photography", max: 100 },
-      { text: "Poster Design", max: 100 },
-      { text: "UI Design", max: 100 },
-      { text: "Frontend", max: 100 },
-      { text: "Backend", max: 100 },
+      { text: "React", max: 100 },
+      { text: "PHP", max: 100 },
+      { text: "Java / Kotlin", max: 100 },
+      { text: "MySQL", max: 100 },
+      { text: "Figma", max: 100 },
+      { text: "Photoshop", max: 100 },
     ],
     shape: "circle",
     center: ["220px", "200px"],
@@ -37,7 +37,7 @@ const optionGeneral = {
     areaStyle: {},
     data: [
       {
-        value: [80, 80, 90, 80, 100, 90],
+        value: [100, 85, 90, 80, 95, 100],
         name: "General Info",
       },
     ],

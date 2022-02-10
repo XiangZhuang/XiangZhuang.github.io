@@ -7,12 +7,18 @@
       > p {
         font-size: 18px;
         font-weight: bold;
+        @media only screen and (max-width: 830px) {
+          font-size: 16px;
+        }
       }
     }
     > .span {
       margin-top: 10px;
       > p {
         font-size: 14px;
+        @media only screen and (max-width: 830px) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -21,10 +27,18 @@
     > .role {
       > p {
         font-weight: bold;
+        @media only screen and (max-width: 830px) {
+          font-size: 14px;
+        }
       }
     }
     > .desc {
       margin-top: 15px;
+      > p {
+        @media only screen and (max-width: 830px) {
+          font-size: 14px;
+        }
+      }
     }
     > .location {
       display: flex;
@@ -35,6 +49,9 @@
       }
       > p {
         font-size: 14px;
+        @media only screen and (max-width: 830px) {
+          font-size: 12px;
+        }
       }
     }
   }
