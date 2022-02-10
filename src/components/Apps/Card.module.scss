@@ -3,6 +3,9 @@
   justify-content: flex-end;
   position: relative;
   min-height: 400px;
+  @media only screen and (max-width: 830px) {
+    min-height: 300px;
+  }
   > .img {
     -webkit-filter: grayscale(0.5);
     position: absolute;
@@ -31,9 +34,18 @@
     z-index: 1;
     width: 50%;
     pointer-events: none;
+    @media only screen and (max-width: 830px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
     > .title {
       font-size: 26px;
       pointer-events: auto;
+      @media only screen and (max-width: 830px) {
+        font-size: 22px;
+      }
       > a {
         color: #333;
         text-decoration: none;
@@ -50,10 +62,16 @@
       background-color: #444;
       border-radius: 6px;
       pointer-events: auto;
+      @media only screen and (max-width: 830px) {
+        padding: 15px;
+      }
       > p {
         color: white;
         line-height: 1.5em;
         text-align: right;
+        @media only screen and (max-width: 830px) {
+          font-size: 14px;
+        }
       }
     }
     > .tools {
@@ -61,8 +79,12 @@
       gap: 15px;
       margin-top: 15px;
       pointer-events: auto;
-      > p {}
-      font-size: 14px;
+      > p {
+        font-size: 14px;
+        @media only screen and (max-width: 830px) {
+          font-size: 12px;
+        }
+      }
     }
     > .externals {
       display: flex;
